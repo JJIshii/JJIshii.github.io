@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jun's Portfolio Website</title>
+
+<link rel="stylesheet" type="text/css" href="bootstrap.css">
+<link rel="stylesheet" type="text/css" href="final.css">
+<!-- JAVASCRIPT AND JQUERY -->
+<script src="jquery-3.3.1.min.js"></script>
+<script src="bootstrap.js"></script>
+<!-- JAVASCRIPT and jQuery END -->
+</head>
+<body>
+<!-- BOOTSTRAP NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <h2 class="navbar-brand">JUN</h2>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">HOME</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="digital.html">DIGITAL ART</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="sketch.html">SKETCHES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">CONTACT</a>
+      </li>
+      <!--<li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>-->
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <!--<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
+      <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+    </form>
+  </div>
+</nav>
+<!-- BOOTSTRAP NAVBAR END -->
+
+<h1>DIGITAL ART</h1>
+<!--<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('original')"> Original</button>
+  <button class="btn" onclick="filterSelection('school')"> School Work</button>
+  <button class="btn" onclick="filterSelection('fanart')"> Fan Art</button>
+</div>-->
+
+<!-- Portfolio Gallery Grid -->
+<div class="main">
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img class="myImages" id="myImg" src="images/devildancers.png" alt="Devil Danger Team Logo" style="width:100%">
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+      </div>
+      <h3>Devil Danger</h3>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img class="myImages" id="myImg" src="images/bp.jpg" alt="Boneless Pizza Team Logo" style="width:100%">
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+      </div>
+      <h3>Boneless Pizza</h3>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="content">
+      <img class="myImages" id="myImg" src="images/goldenTurdM.png" alt="Golden Turd Emote" style="width:100%">
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+        <h3>Golden Turd Emote</h3>
+      </div>
+    </div>
+
+  <div class="column">
+    <div class="content">
+      <img class="myImages" id="myImg" src="images/helloT.png" alt="Hello? Turd Emote" style="width:100%">
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+      </div>
+      <h3>Hello? Turd Emote</h3>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="content">
+      <img class="myImages" id="myImg" src="images/greenryuu.png" alt="Jade Dragon" style="width:100%">
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+      </div>
+      <h3>Jade Dragon</h3>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="content">
+      <img class="myImages" id="myImg" src="images/redhand.png" alt="Red Hand" style="width:100%">
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+      </div>
+      <h3>Red Hand</h3>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="content">
+      <img class="myImages" id="myImg" src="images/px.png" alt="PX Team Logo" style="width:100%">
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+      </div>
+      <h3>Team PX Logo</h3>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="content">
+      <img class="myImages" id="myImg" src="images/jamesAnime.jpg" alt="James (Anime Style)" style="width:100%">
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+      </div>
+      <h3>James (Anime Style)</h3>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="content">
+      <img class="myImages" id="myImg" src="images/hajimemashite.png" alt="Nice to meet you" style="width:100%">
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+      </div>
+      <h3>Hajimemashite</h3>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="content">
+      <img class="myImages" id="myImg" src="images/hiragana.jpg" alt="Hiragana" style="width:100%">
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+      </div>
+      <h3>Hiragana</h3>
+    </div>
+  </div>
+
+<div class="column">
+    <div class="content">
+      <img class="myImages" id="myImg" src="images/dawnStudioApparel.png" alt="Dawn Studios Bomber Jacket" style="width:100%">
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+      </div>
+      <h3>Dawn Studio Jacket</h3>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="content">
+      <img class="myImages" id="myImg" src="images/dawnlogoV2.png" alt="Dawn Studios Logo" style="width:100%">
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+      </div>
+      <h3>Dawn Studio Logo</h3>
+    </div>
+  </div>
+
+  </div>
+
+ 
+
+<!-- END MAIN -->
+</div>
+
+<button type="button" class="btn btn-secondary btn-lg btn-block"><a href="digital.html">DIGITAL ART</a></button>
+<button type="button" class="btn btn-secondary btn-lg btn-block"><a href="sketch.html">SKETCHES</a></button>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var images = document.getElementsByClassName('myImages');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+for (var i = 0; i < images.length; i++) {
+  var img = images[i];
+  // and attach our click listener for this image.
+  img.onclick = function(evt) {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+
+</body>
+</html>
