@@ -275,3 +275,16 @@ input[type=submit]:hover {
 p {
   color: white;
 }
+-------------------
+/*Instagram*/
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+.fa-instagram {
+  background: black;
+  color: white;
+}
